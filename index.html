@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zaio Rent-A-Car App</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://d33wubrfki0l68.cloudfront.net/6028c16267fd3dfae7a089a32a0df6f590e01662/e8bbe/_next/static/images/logo_blue-8ff099701b53f0f7019bbca03c73cccc.png" alt="logo">
+        </div>
+    </header>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="User Name">
+                <input type="password" placeholder="Password">
+                <input type="email" placeholder="Email">
+                <a href="listings-page.html"><button type="button">Register</button></a>
+                <p class="message">Already Registered?<a href="#">Login</a></p>
+            </form>
+            <form class="login-form">
+                <input type="email" placeholder="Email Address">
+                <input type="password" placeholder="Password">
+                <a href="listings-page.html"><button type="button">Login</button></a>
+                <p class="message">Not Registered?<a href="#"> Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $('.message a').click(function()
+        {
+            $('form').animate({height:"toggle",opacity:"toggle"}, "slow");
+        });
+    </script>
+</body>
+</html>
